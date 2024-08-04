@@ -1,0 +1,33 @@
+/* Neumorphism effect */
+.shadow-neumorph {
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2),
+    -8px -8px 15px rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+}
+
+/* Input shadow effect */
+.shadow-input {
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+}
+
+/* Hover effect for buttons */
+.button,
+button:hover {
+  transform: translatey(3px);
+  box-shadow: none;
+}
+
+.button,
+button:hover {
+  animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes ani9 {
+  0% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}

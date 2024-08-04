@@ -1,0 +1,123 @@
+.modal-content,
+.add-modal-content {
+  position: relative;
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2),
+    -8px -8px 15px rgba(255, 255, 255, 0.9);
+  animation: slideIn 0.4s ease-in-out;
+}
+
+.add-modal-content {
+  max-width: 400px; /* Slightly narrower for AddUser */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #ff0000;
+}
+
+.modal-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.form-input {
+  width: 100%;
+  padding: -0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.input-error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.save-button {
+  background-color: #48bb78; /* Equivalent to bg-green-300 */
+  color: white; /* Equivalent to text-white */
+  border: 1px solid #2f855a;
+  padding: 0.75rem 1.5rem;
+
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.block-button {
+  background-color: #f56565; /* Equivalent to bg-green-300 */
+  color: white; /* Equivalent to text-white */
+  border: 1px solid #f56565;
+  padding: 0.75rem 1.5rem;
+
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #d1fae5; /* Equivalent to bg-green-300 */
+  color: black; /* Equivalent to text-white */
+  border: 1px solid #2f855a;
+}
+
+.block-button:hover {
+  background-color: #f6adcd;
+  color: black; /* Equivalent to text-white */
+  border: 1px solid #f56565;
+}
+.button-container-centered {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
